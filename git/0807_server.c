@@ -91,23 +91,7 @@ ssize_t readn(int fd, void *vptr, size_t n)
 #define edge_3_hall 4
 #define edge_4_1_hall 6
 #define edge_4_1_mot 7
-#define edge_4_2_hall 31#include <stdio.h>
-#include <wiringPi.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-
-#include <unistd.h>
-#include <string.h>
-#include <errno.h>
-#include <pthread.h>
-
-#include <softPwm.h>
-
-/*
-pin number define
-*/
+#define edge_4_2_hall 31
 
 struct packet {
 	char *base;
