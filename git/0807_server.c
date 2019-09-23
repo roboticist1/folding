@@ -64,35 +64,6 @@ ssize_t readn(int fd, void *vptr, size_t n)
 	return(n - nleft);      /* return >= 0 */
 }
 
-#define layer_3_1_mot 4
-#define layer_3_4_pwm 28
-
-#define layer_3_2_a 24
-#define layer_3_2_b 25
-//#define layer3_2_pwm 15
-
-#define layer_4_1_a 22
-#define layer_4_1_b 23
-//#define layer4_1_pwm 5
-
-#define layer_4_2_a 30
-#define layer_4_2_b 21
-//#define layer4_2_pwm 6
-
-#define layer_4_3_a 15
-#define layer_4_3_b 16
-//#define layer4_3_pwm 11
-
-#define unloading_a 2
-#define unloading_b 3
-#define unloading_pwm 29
-
-#define edge_3_mot 5
-#define edge_3_hall 4
-#define edge_4_1_hall 6
-#define edge_4_1_mot 7
-#define edge_4_2_hall 31
-
 struct packet {
 	char *base;
 	char *ptr;
